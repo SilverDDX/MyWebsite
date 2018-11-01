@@ -1,0 +1,292 @@
+@font-face {
+    font-family: Noir_medium;
+    src: url(fonts/Noir_medium.otf);
+}
+@font-face {
+    font-family: Noir_regular;
+    src: url(fonts/Noir_regular.otf);
+}
+@font-face {
+    font-family: Melte;
+    src: url(fonts/Melte.ttf);
+}
+@font-face {
+    font-family: Katona;
+    src: url(fonts/KatonaIII.ttf);
+}
+
+*{
+  transition: all 150ms ease-in-out;
+}
+:root{
+  font-size : 14px;
+}
+
+body{
+  font-family: Noir_regular;
+  background-image : url(media/background.png);
+  background-repeat: no-repeat;
+  background-size:100% auto;
+  background-attachment: fixed;
+}
+
+strong{
+  font-weight: normal;
+  font-family: Noir_medium;*
+
+}
+
+/*Header*/
+
+.header{
+  background-color: rgba(0,0,0,.7);
+
+}
+.header h1{
+  font-size: 2rem;
+  padding : .8rem 0 .5rem ;
+  font-family: Melte;
+  color: white;
+  margin:  0;
+}
+
+.header h2{
+  padding : 0 0 1rem;
+  font-family: Katona;
+  color: white;
+  margin : 0;
+}
+/*Menu*/
+
+.nav {
+  background-color: #051628;
+  position: fixed;
+  width: 100%;
+  bottom :0 ;
+  line-height: 3rem;
+}
+.nav a{
+  font-family: Melte;
+  text-align: center;
+  height:100%;
+  vertical-align: middle;
+  color : white;
+}
+
+.nav a:hover{
+  color:black;
+  background-color: rgba(240,240,240,255);
+}
+
+.nav h3{
+  vertical-align: middle;
+}
+
+.menu-container{
+  width : 100%;
+  margin: 0 auto;
+}
+
+
+
+
+/*Section media*/
+
+.social-media div{
+  padding: 0 3vw;
+
+}
+
+.social-media div:hover{
+  cursor: pointer;
+  padding: 0 2.5vw;
+
+}
+
+.social-media .row{
+  margin: 0 auto;
+}
+
+.social-media section{
+  margin : 50vh auto 0;
+}
+
+.mail h3{
+  margin: 2rem auto;
+ color : white;
+}
+
+
+
+
+/*Section situation*/
+
+.situation h3{
+  font-family: Noir_medium;
+  margin: 0 auto;
+}
+
+.situation h3 small{
+  font-family: Noir_regular;
+}
+.situation{
+    background-color: white;
+}
+.situation section{
+  margin : 2em 0;
+}
+
+/*Qui suis je*/
+
+.resume{
+  background-color: #434D59;
+}
+
+.resume section .row div{
+  margin: 4rem auto 15rem;
+}
+
+.resume p{
+ font-size: 1.3rem;
+ color: #BFC7D0;
+}
+
+.resume strong{
+    color : white;
+}
+
+ .resume #legend{
+  float: right;
+  margin: 0 0 2rem 0;
+  width:25vw;
+  min-width: 250px;
+  max-height: 400px;
+  padding: 0 3vw ;
+  overflow: hidden;
+}
+#legend img{
+max-width: 100%;
+}
+
+.clear{
+  clear : both;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 576px) {
+  .menu-container{
+    width : 100%;
+    margin: 0 auto;
+  }
+
+}
+@media (min-width: 768px) {
+
+
+  .social-media div{
+    padding: 0 2vw;
+
+  }
+
+  .social-media div:hover{
+    padding: 0 1.8vw;
+
+  }
+
+
+  body{
+    background-position: 0 -10rem;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .menu-container{
+    width : 50%;
+    margin: 0 auto;
+  }
+  body{
+    background-position: 0 -15rem;
+  }
+
+      .resume #legend{
+        width:25vw;
+        min-width: 250px;
+        padding: 0 4vw 2rem;
+     }
+
+
+}
+
+@media (min-width: 1200px) {
+  .menu-container{
+    width : 40%;
+    margin: 0 auto;
+
+  }
+
+  body{
+    background-position: 0 -35rem;
+  }
+}
+
+
+@media screen and (orientation:portrait){
+
+  .social-media section{
+    margin : 45vh auto 0;
+  }
+
+    .resume #legend{
+    float: none;
+    margin: 0 auto 2rem;
+   }
+
+}
+
+
+
+@media screen and (orientation:landscape) and (max-width:768px){
+
+  .social-media section{
+    margin : 5vh auto 0;
+  }
+
+  .social-media div{
+    padding: 0 6vw;
+
+  }
+
+  .social-media div:hover{
+    padding: 0 5.5vw;
+
+  }
+
+  body{
+    background-position: 0 -10rem;
+  }
+}
+
+
+@media screen and (orientation:landscape) and (min-width:768px) and (max-width:990px){
+
+  .social-media section{
+    margin : 5vh auto 0;
+  }
+
+  .social-media div{
+    padding: 0 2vw;
+
+  }
+
+  .social-media div:hover{
+    padding: 0 1.5vw;
+
+  }
+
+  body{
+    background-position: 0 -10rem;
+  }
+
+
+  }
