@@ -92,15 +92,21 @@ strong{
 
 /*Section media*/
 
-.social-media div{
-  padding: 0 3vw;
+.social-media div div{
+  padding: 0 2vw;
 
 }
 
-.social-media div:hover{
-  cursor: pointer;
-  padding: 0 2.5vw;
 
+.social-media div div{
+  -webkit-filter: saturate(90%); /* Safari 6.0 - 9.0 */
+  filter: saturate(90%);
+}
+
+.social-media div div:hover{
+  cursor: pointer;
+  -webkit-filter: saturate(120%);
+  filter: saturate(120%);
 }
 
 .social-media .row{
@@ -133,7 +139,7 @@ strong{
     background-color: white;
 }
 .situation section{
-  margin : 2em 0;
+  margin : 2.5rem 0;
 }
 
 /*Qui suis je*/
@@ -142,8 +148,14 @@ strong{
   background-color: #434D59;
 }
 
+.resume h1{
+  color : white;
+  margin: 5rem 0 4rem;
+  font-family: Noir_medium;
+}
+
 .resume section .row div{
-  margin: 4rem auto 15rem;
+  margin: 0 auto;
 }
 
 .resume p{
@@ -171,6 +183,74 @@ max-width: 100%;
 .clear{
   clear : both;
 }
+.resume a{
+    text-decoration: none;
+    color : #2D3237;
+}
+.container-fluid .resume .cv-link{
+  background-color: #BFC7D0;
+  border-radius: 1rem;
+  margin: 2rem auto 8rem;
+  padding: 1rem;
+  font-family: Noir_medium;
+  font-size: 1.1rem;
+}
+
+.resume .cv-link:hover{
+    background-color: #F7F8F9;
+}
+
+
+/*Portfolio*/
+
+.pt1{
+  background-color: white;
+}
+
+.pt2{
+  background-color: #434D59;
+  color : white;
+}
+
+.pt3{
+  background-color: white;
+}
+
+.pt4{
+  background-color: #434D59;
+  color : white;
+}
+
+.portfolio h1{
+  margin: 3rem 0 0;
+  font-family: Noir_medium;
+}
+
+.portfolio h2{
+  margin : 2rem 0 0;
+  font-size: 1.3rem;
+  font-family: Noir_medium;
+}
+.portfolio section{
+margin: 0 auto 5rem;
+}
+.ptf-item {
+  overflow: hidden;
+  height : 40vh;
+  padding: 2rem;
+}
+
+.ptf-item img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.ptf-item img:hover{
+  cursor: pointer;
+}
 
 /*MEDIA QUERIES*/
 @media (min-width: 576px) {
@@ -185,11 +265,6 @@ max-width: 100%;
 
   .social-media div{
     padding: 0 2vw;
-
-  }
-
-  .social-media div:hover{
-    padding: 0 1.8vw;
 
   }
 
@@ -213,6 +288,16 @@ max-width: 100%;
         width:25vw;
         min-width: 250px;
         padding: 0 4vw 2rem;
+     }
+     .resume .first-paragraph{
+       padding-top: 4rem;
+     }
+     .clear{
+         clear : none;
+     }
+
+     .wide-clear{
+       clear:both;
      }
 
 
@@ -244,6 +329,20 @@ max-width: 100%;
 
 }
 
+@media screen and (orientation:portrait) and (max-width:576px){
+
+  .resume p {
+    font-size: 1.2rem;
+  }
+
+  .container-fluid  #popup div{
+
+    	margin: 10vh auto;
+
+    }
+}
+
+
 
 
 @media screen and (orientation:landscape) and (max-width:768px){
@@ -254,11 +353,6 @@ max-width: 100%;
 
   .social-media div{
     padding: 0 6vw;
-
-  }
-
-  .social-media div:hover{
-    padding: 0 5.5vw;
 
   }
 
@@ -279,14 +373,80 @@ max-width: 100%;
 
   }
 
-  .social-media div:hover{
-    padding: 0 1.5vw;
-
-  }
 
   body{
     background-position: 0 -10rem;
   }
 
+
+  }
+
+
+
+  /*PopUp*/
+
+  #popup{
+  	top :0;
+    bottom: 0;
+    right: 0;
+    left:0;
+overflow-y: auto;
+
+   background-color: rgba(20,29,39, .9);
+  	position: fixed;
+  	z-index :  1;
+  	display: none;
+  }
+
+.container-fluid  #popup div{
+  	display: block;
+    position: static;
+  	width : 70vw;
+  	margin: 30vh auto;
+
+  }
+  .blocker{
+    overflow: hidden;
+  }
+
+  #popup img{
+  	max-width: 100%;
+  	cursor: default;
+  	margin: 0 auto;
+  	display: block;
+  	max-width: 100%;
+  	text-align: center;
+  	z-index: 0;
+  }
+
+
+  #popup .scroll{
+
+  max-height: 1500px;
+
+  }
+
+  #exit{
+  	position: absolute;
+  	top :3%;
+  	right : 5%;
+  	width : 5vw;
+  	height : 5vw;
+  }
+
+  #exit img:hover{
+      cursor:pointer;
+  }
+
+  /*Footer*/
+
+  .footer{
+    font-size: 1.1rem;
+    background-color: white;
+    padding: 1rem 0 4rem;
+  }
+
+  .footer footer{
+    margin: 0 auto;
 
   }
