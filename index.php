@@ -12,7 +12,6 @@
     <title>Yannis Guillemote</title>
   </head>
   <body>
-    <!--Header-->
     <div class="container-fluid">
       <header class="header row">
             <div class="col-xs-12 col-md-12 col-lg-12">
@@ -70,14 +69,14 @@
               <div class="row">
                 <div class="col-10 col-sm-8 col-md-8 col-lg-6">
                   <div id="legend"><img src="media/legend.jpg" alt="yannis"></div>
-                  <p class="first-paragraph text-justify">
+                  <p class="first-paragraph text-left">
                     Originaire de Dijon, je suis étudiant en Master Management des Technologies Interactives 3D aux Arts et Métiers Paritech.
                   </p>
-                  <p class="text-justify">
+                  <p class="text-left">
                     Ayant précédemment étudié <strong>l'audiovisuel</strong>, <strong>l'intégration web</strong> et le <strong>graphisme</strong> au cours de mon cursus,
                     la <strong>découverte</strong> de nouveaux domaines est l'un des moteurs de mes travaux.
                   </p>
-                  <p class="clear text-justify">
+                  <p class="clear text-left">
                     Passionné par l'utilisation de l'outil informatique dans la <strong>création</strong>,
                     je suis particulièrement intéressé par les projets alliant <strong>art et technologie</strong>.
                 </div>
