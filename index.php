@@ -54,13 +54,13 @@
 
         </div>
 
-        <div id ="resume" class="row situation">
+        <!-- <div id ="resume" class="row situation">
             <section class = "col-12 col-sm-12 col-md-12 col-lg-12">
               <h3 class ="text-center">En recherche de stage <br/>
                 <small>Développement d'applications RA/RV</small>
               </h3>
             </section>
-        </div>
+        </div> -->
 
         <div class="row resume">
           <section class="col-12 col-sm-12 col-md-12 col-lg-12">
